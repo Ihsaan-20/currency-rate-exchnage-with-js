@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>.:: Currency Exchange Rate ::.</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <main>
+
+            <div class="container">
+                <form action="">
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
+                            <div class="card mt-3">
+                                <div class="card-header">
+                                    <h1 class="text-center">
+                                        Currency Exchange Rate 
+                                    </h1>
+                                </div>
+                            </div>
+    
+                            <div class="card mt-3">
+                                <div class="card-body">
+                                    <div class="mb-3 mt-3">
+                                        <label for="">Amount</label>
+                                        <input type="text" name="amount" class="form-control" value="1" id="amount">
+                                    </div>
+    
+                                    <div class="dropdown">
+                                        <div class="mb-3 mt-3 from">
+                                            <label for="">From</label>
+                                            <select name="from" class="form-control" id=""></select>
+                                            <img src="https://flagsapi.com/US/shiny/64.png">
+                                         </div>
+             
+                                         <div class="mb-3 to">
+                                             <label for="">To</label>
+                                             <select name="to" class="form-control" id=""></select>
+                                             <img src="https://flagsapi.com/PK/shiny/64.png">
+                                         </div>
+    
+                                         <div class="mb-3 text-center">
+                                            <button class="btn btn-success px-5" id="getExchange">Get Exchange</button>
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="card mt-3">
+                                <div class="card-header">
+                                    <h5 class="text-center" id="result">
+                                        1 PKR = 1 USD 
+                                    </h5>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </form>
+               
+
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <p id="currentDate" class="text-center">okay</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="codes.js"></script>
+        <script src="app.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
