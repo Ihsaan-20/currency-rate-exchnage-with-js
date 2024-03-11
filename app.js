@@ -24,7 +24,6 @@ for(select of dropdowns)
         {
             newOption.selected = 'selected';
         }
-
         select.append(newOption);       
     }
 
@@ -61,7 +60,6 @@ for(select of dropdowns)
         result.innerText = `${amountVal.toFixed(2)} ${fromCurrency.value.toUpperCase()} to ${finalAmount.toFixed(2)} ${toCurrency.value.toUpperCase()}`;
     }
     
-
     btn.addEventListener("click", (event) => {
         event.preventDefault();
         updateExchangeRate();
