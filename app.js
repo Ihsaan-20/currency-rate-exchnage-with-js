@@ -1,7 +1,3 @@
-
-
-// const BASE_URL ="https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies";
-
 const API_KEY = "5c8566eaefa43e7a29059db9";
 const BASE_URL_TWO =`https://v6.exchangerate-api.com/v6/${API_KEY}/latest/`;
 
@@ -17,7 +13,6 @@ for(select of dropdowns)
 {
     for(currenyCode in countryList)
     {
-        // console.log(currenyCode.toLowerCase(), countryList[currenyCode].toLowerCase());
         let newOption = document.createElement("option");
         newOption.innerText = currenyCode;
         newOption.value = currenyCode;
@@ -77,8 +72,7 @@ for(select of dropdowns)
     });
 
     //show current date;
-    let date = new Date().toLocaleDateString();
-    console.log(date); // 6/17/2022
+    let date = new Date().toLocaleDateString();// 6/17/2022
     const currentDate = document.querySelector('#currentDate');
     currentDate.innerText = date;
 
