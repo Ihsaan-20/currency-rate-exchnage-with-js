@@ -78,7 +78,10 @@ remove.addEventListener("click", () => {
         form.removeChild(lastEle);
         index--;
         console.log('removed last input field');
-    } else {
+    } else if(index === 0 ) {
+        container.removeChild(div);
+        console.log('removed card');
+    }else{
         console.log('Nothing to remove');
     }
 });
