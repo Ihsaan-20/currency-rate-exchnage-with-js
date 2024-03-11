@@ -41,12 +41,13 @@ add.addEventListener("click", () => {
 
 remove.addEventListener("click", () => {
     let div = container.lastElementChild;
-    if (div) {
-        container.removeChild(div);
-        console.log('removed');
-    } else {
-        console.log('Nothing to remove');
-    }
+    (div) ? container.removeChild(div) : console.log('Nothing to remove');
+    // if (div) {
+    //     container.removeChild(div);
+    //     console.log('removed');
+    // } else {
+    //     console.log('Nothing to remove');
+    // }
 });
 
 
