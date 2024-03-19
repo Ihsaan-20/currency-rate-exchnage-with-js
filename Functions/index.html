@@ -10,6 +10,32 @@
     <div id="main"></div>
 
     <script>
+
+        let evenSum = 0;
+        let oddSum = 0;
+
+        for (let num = 0; num <= 100; num++) {
+            if (num % 2 === 0) {
+                console.log(`${num} is even`);
+                evenSum += num;
+            } else {
+                console.log(`${num} is odd`);
+                oddSum += num;
+            }
+        }
+
+
+
+        // let string = "jhdfsfdhjhjkafjkhwihjdhokjsljsjujdjde";
+        // let volve= '';
+        // for(let letter of string)
+        // {
+        //     if(letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter === 'u')
+        //     {
+        //         volve += letter;
+        //     }
+        // }
+        // console.log(volve);
         //lacacy / traditional way;
         // function myFunction()
         // {
