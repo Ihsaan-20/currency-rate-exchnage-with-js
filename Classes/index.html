@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes & Objects</title>
+</head>
+<body>
+    
+
+
+    <script>
+        class User {
+            constructor(name, email) {
+                this.name = name;
+                this.email = email;
+            }
+    
+            details() { 
+                console.log("User name is " + this.name);
+                console.log("User email is " + this.email);
+            }
+        }
+    
+        class Job extends User {
+            constructor(name, email, job) {
+                super(name, email);
+                this.job = job;
+            }
+    
+            jobDetails() { 
+                console.log("User job is " + this.job); 
+            }
+        }
+
+
+        let user_one_details = new Job("Ihsaan Chandio", "ihsaan@gmail.com", "Php/laravel Developer");
+        let user_two_details = new Job("Asim Chandio", "asim@gmail.com", "Python Developer");
+
+        console.log(`User name is ${user_one_details.name},\nuser-email is ${user_one_details.email},\nand user-job is ${user_one_details.job}`);
+        console.log(`User name is ${user_two_details.name},\nuser-email is ${user_two_details.email},\nand user-job is ${user_two_details.job}`);
+    </script>
+    
+    
+</body>
+</html>
